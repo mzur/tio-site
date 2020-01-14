@@ -2,8 +2,7 @@
 title: the Inspired Ones
 description: >-
   The Inspired Ones ist eine kleine Agentur für Webdesign und -entwicklung aus NRW. Mit viel Liebe zum Detail bieten wir Ihnen beste Voraussetzungen für ihren kleinen bis mittelgroßen Webauftritt.
-# url: "https://the-inspired-ones.de"
-url: "https://theinspiredones.github.io/site"
+url: "https://the-inspired-ones.de"
 permalink: /:title
 timezone: Europe/Berlin
 sass:
