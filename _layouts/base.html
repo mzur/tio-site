@@ -10,48 +10,11 @@
     <link href="{{ '/assets/css/libs.css' | prepend: site.url }}" rel="stylesheet">
     <link href="{{ '/assets/css/main.css' | prepend: site.url }}" rel="stylesheet">
 
-    <!--[if lt IE 10]>
-    <style>
-        /* No Flex-Box */
-        .main-header--teaser__text  {
-            margin-top: 8em;
-        }
-    </style>
-    <![endif]-->
-
 </head>
 
 <body data-ng-app="tioApp">
-    <nav class="pure-menu-mobile">
-        <button class="pure-button button-menu-close">&times;</button>
-        <ul class="mobile-nav__links">
-            {% include menu.html %}
-        </ul>
-    </nav>
-    <div class="content-mobile-navi">
-        <nav class="main-nav {% if page.url == '/' %} main-nav--inverted {% endif %}">
-            <div class="centered cf">
-                <button class="pure-button button-menu-open main-nav__button"><img src="{{ '/assets/images/icon-menu.svg' | prepend: site.url }}"></button>
-                <a class="tio-logo main-nav__logo" href="{{ site.url }}">
-                    <img class="swoosh" src="{{ '/assets/images/tio-swoosh-green.svg' | prepend: site.url }}" alt="icon">
-                    <h1 class="text">the Inspired Ones</h1>
-                </a>
-                <ul class="main-nav__links">
-                    {% include menu.html %}
-                </ul>
-            </div>
-        </nav>
     {{ content }}
-    <footer class="main-footer">
-        <div class="centered">
-            <strong class="main-footer__copy">the Inspired Ones</strong>
-            <a href="{{ '/impressum' | prepend: site.url }}">Impressum</a> &middot;
-            <a href="{{ '/agb' | prepend: site.url }}">AGB</a>
-        </div>
-    </footer>
 </div>
-    <script type="text/javascript" src="{{ '/assets/js/libs.js' | prepend: site.url }}"></script>
-    <script type="text/javascript" src="{{ '/assets/js/main.js' | prepend: site.url }}"></script>
 </body>
 
 </html>
